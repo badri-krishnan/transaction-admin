@@ -1,0 +1,5 @@
+name: transactionadmin
+
+dependencies:
+  - python=3.8
+  - django
