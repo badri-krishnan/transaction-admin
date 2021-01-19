@@ -29,6 +29,8 @@ class Transaction(models.Model):
         """String for representing the Model object."""
         return "Transaction id:  %s " % self.transaction_id
 
-    def update_transaction_status(self,id):
+    def update_transaction_status(self,id,status):
         self.user_to_status_map = {}
         print(self.transaction_id)
+        self.status = self.TRANSACTION_STATUS('A')
+        self.save()
